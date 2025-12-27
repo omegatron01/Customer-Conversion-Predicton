@@ -53,7 +53,8 @@ The API returns the probability of conversion:
   "conversion_probability": 0.8269
 }
 
-###Local Development (Without Docker)
+## Local Development (Without Docker)
+
 If you wish to run it locally without Docker:
 
 Create a virtual environment: 
