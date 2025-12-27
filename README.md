@@ -32,24 +32,28 @@ python predict_test.py
 Sample Request Payload
 The model expects a JSON object similar to this:
 
-JSON
 
 {
-  "job": "retired",
-  "duration": 445,
-  "outcome": "success"
-}
+  "lead_source": "events",
+  "industry" : "healthcare",
+  "number_of_courses_viewed" : 5,
+  "annual_income" : 78796.0,
+  "employment_status" : "unemployed", 
+  "location" : "australia",
+  "interaction_count" : 3,
+  "lead_score" : 0.69 
+  }
+
+
 Sample Response
 The API returns the probability of conversion:
-
-JSON
 
 {
   "conversion": true,
   "conversion_probability": 0.8269
 }
 
- ##Local Development (Without Docker)
+##Local Development (Without Docker)
 If you wish to run it locally without Docker:
 
 Create a virtual environment: 
